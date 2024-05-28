@@ -6,21 +6,26 @@ import HomePage from "./general/home";
 import AboutPage from "./general/about"; 
 import FeedbackPage from "./general/feedback";
 import Services from "./general/services";
+import Sidebar from "./general/components/sidebar";
+import PHome from "./patient/p_home";
 
 function App() {
   return (
     <div>
-      <Services/>
+
+
+
       
       
-           {/* <Routes>
+         <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/feedback" element={<FeedbackPage />} />
         <Route path="/login" element={<PatientLoginPage />} />
         <Route path="/signup" element={<PatientSignupPage />} />
-      </Routes> */}
+        <Route path="/p_home" element={<Sidebar />} />
+      </Routes>
     </div>
   );
 }
